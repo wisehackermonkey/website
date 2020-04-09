@@ -13,3 +13,10 @@ docker build . -t wisehackermonkey/website:latest
 ```
 docker run -it --rm -v ${PWD}/website:/usr/share/nginx/html -p 7000:80 wisehackermonkey/website:latest
 ```
+
+
+### how to deploy
+```
+docker run -d --restart always  -p 80:80 wisehackermonkey/website:latest
+```
+
