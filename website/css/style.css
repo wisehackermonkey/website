@@ -1,0 +1,16 @@
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+body {
+    background: no-repeat url("../img/bg_large_v1.png")
+}
+
+#author{
+    padding-top: 100px;
+}
