@@ -12,6 +12,13 @@
 ```bash
 docker build . -t wisehackermonkey/website:latest
 ```
+#### docker compose (DEV)
+```bash
+cd project/folder/here/
+
+docker-compose -f docker-compose.development.yml build
+docker-compose -f docker-compose.development.yml up
+```
 
 
 ### how to run  (DEV windows)

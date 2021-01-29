@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    website:
+        container_name: website
+        ports:
+            - '80:80'
+        build: .
+        volumes:
+            - './website:/usr/share/nginx/html'
