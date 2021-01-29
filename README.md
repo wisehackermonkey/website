@@ -28,8 +28,15 @@ docker run -it --rm -v ${PWD}/website:/usr/share/nginx/html -p 7000:80 wisehacke
 
 
 ### how to deploy
+#### Docker (normal)
 ```bash
 docker run -d --restart always --name website -p 80:80 wisehackermonkey/website:latest
+```
+#### docker compose
+#### docker compose (DEV)
+```bash
+cd project/folder/here/
+docker-compose  up -d
 ```
 ### Run on raspberry pi 3 (ARM) os = dietpi 20200929
 #### Build
