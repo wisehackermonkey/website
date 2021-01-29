@@ -6,6 +6,8 @@
 ![](./screen_v1.png)
 ## link [click here](orancollins.com)
 
+### It loads super fast on dialup!!!
+![](./dialup_speed.gif)
 ### how to build 
 ```bash
 docker build . -t wisehackermonkey/website:latest
