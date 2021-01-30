@@ -58,3 +58,22 @@ docker run -d --restart always --name website -p 80:80 wisehackermonkey/website:
 docker kill test && docker rm test &&docker build . -t wisehackermonkey/website:latest&&docker run -d --restart always --name test -p 80:80 wisehackermonkey/website:latest
 ```
 
+
+
+# How to setup https with traefik
+### Link [How To Use Traefik v2 as a Reverse Proxy for Docker Containers on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-traefik-v2-as-a-reverse-proxy-for-docker-containers-on-ubuntu-20-04)
+```bash
+sudo apt-get install apache2-utils
+htpasswd -nb admin secure_password
+
+code traefik_dynamic.toml
+docker network create web
+code acme.json
+chmod 600 acme.json 
+code docker-compose.traefik.yml
+docker-compose -f docker-compose.traefik.yml up
+
+code docker-compose.traefik2.yml
+docker-compose -f docker-compose.traefik2.yml up
+
+```

@@ -1,0 +1,22 @@
+[http.middlewares.simpleAuth.basicAuth]
+  users = [
+  ]
+
+[http.routers.api]
+  rule = "Host(`monitor.orancollins.com`)"
+  entrypoints = ["websecure"]
+  middlewares = ["simpleAuth"]
+  service = "api@internal"
+  [http.routers.api.tls]
+    certResolver = "lets-encrypt"
+
+[http.routers]
+  [http.routers.my-https-router]
+    rule = "Host(`www.orancollins.com`) && Path(`/website/`)"
+    service = "service-id"
+    # will terminate the TLS request
+    [http.routers.my-https-router.tls]
+
+  [http.routers.my-http-router]
+    rule = "Host(`www.orancollins.com`) && Path(`/website/`)"
+    service = "service-id"
