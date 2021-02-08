@@ -68,3 +68,13 @@ docker run -d --restart always --name website -p 80:80 wisehackermonkey/website:
 docker kill test && docker rm test &&docker build . -t wisehackermonkey/website:latest&&docker run -d --restart always --name test -p 80:80 wisehackermonkey/website:latest
 ```
 
+### How to build for multiple archatectures like raspbery pi 2,3,4!
+#### fallowed tutorial [here](https://collabnix.com/building-arm-based-docker-images-on-docker-desktop-made-possible-using-buildx/)
+```bash
+docker buildx ls
+docker buildx create --name rpi_builder
+docker buildx use rpi_builder
+docker buildx ls
+docker buildx inspect --bootstrap
+docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6 -t wisehackermonkey/website --push .
+```
