@@ -12,6 +12,16 @@
 ```bash
 docker build . -t wisehackermonkey/website:latest
 ```
+### build for multiple arches
+```bash
+docker login
+export DOCKER_CLI_EXPERIMENTAL=enabled
+DOCKER_BUILDKIT=1 & docker buildx create --use --name multiarchbuilder
+docker buildx ls
+# DOCKER_BUILDKIT=1 & docker build -t wisehackermonkey/website:latest .
+docker buildx build -t wisehackermonkey/website:latest --platform=linux/arm,linux/arm64,linux/amd64 . --push
+
+```
 #### docker compose (DEV)
 ```bash
 cd project/folder/here/
