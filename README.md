@@ -10,6 +10,9 @@
 ![](./dialup_speed.gif)
 ### also i added my own custom http headers!
 ![](https://i.imgur.com/WGvbHwi.png)
+### also also funny robots hehe
+![](https://i.imgur.com/o0x61eF.png)
+
 ### how to build 
 ```bash
 docker build . -t wisehackermonkey/website:latest
