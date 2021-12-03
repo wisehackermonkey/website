@@ -7,7 +7,7 @@ export default function Title() {
     return <>
 
         <Tilt>
-            <div style={{ height: '100px' }}>
+            <div style={{ height: '100px', padding: "10px" }}>
                 <CssBaseline />
                 <Paper elevation={10}>
                     <Typography
