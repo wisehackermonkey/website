@@ -1,0 +1,63 @@
+{
+    "links": [
+        {
+            "text": "My Personal Blog",
+            "link": "http://oransblog.com"
+        },
+        {
+            "text": "Resume",
+            "link": "https://github.com/wisehackermonkey/resume-master/raw/master/oran_resume_v1.pdf"
+        },
+        {
+            "text": "Business card Puzzle checker",
+            "link": "http://www.orancollins.com:3333/"
+        } ,
+        {
+            "text": "Projects",
+            "link": "https://orans.dev/projects"
+        } 
+           
+    ],
+    "old-links": [
+        {
+            "text": "My Personal Blog",
+            "link": "http://oransblog.com"
+        },
+        {
+            "text": "Resume",
+            "link": "https://github.com/wisehackermonkey/resume-master/raw/master/oran_resume_v1.pdf"
+        },
+        {
+            "text": "Business card Puzzle checker",
+            "link": "http://www.orancollins.com:3333/"
+        },
+        {
+            "text": "human or banana detector",
+            "link": "https://human-or-banana-detector.netlify.app/"
+        },
+        {
+            "text": "Chirp.io Data transmission using WebAudio",
+            "link": "http://www.orancollins.com:1199/"
+        },
+        {
+            "text": "Remash multi user live editing page (try opening in multiple tabs!)",
+            "link": "http://www.orancollins.com:7788/"
+        },
+        {
+            "text": "My 90's website",
+            "link": "http://www.orancollins.com:1990/"
+        },
+        {
+            "text": "Blank Page Website",
+            "link": "http://www.orancollins.com:11111/"
+        },
+        {
+            "text": "Webtorrent demo",
+            "link": "http://www.orancollins.com:3490/"
+        },
+        {
+            "text": "Pixilate image server: pixel-artist by blackspike.com",
+            "link": "http://www.orancollins.com:6451/"
+        }
+    ]
+}
