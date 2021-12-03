@@ -17,7 +17,11 @@ import FolderIcon from '@mui/icons-material/Folder';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Button, Chip, Stack, CssBaseline } from '@mui/material';
 
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+
 import "../App.css"
+import "./Menu.css"
 import LINKS from "../../../links.json"
 export default function IconMenu() {
     return (
@@ -32,7 +36,8 @@ export default function IconMenu() {
                         LINKS.links.map((link, key) => {
                             return (
                                 <ListItem key={key}>
-                                    <Button variant='contained' href={link.link}> {link.text} </Button>
+                                    <AwesomeButton type="primary">{link.text} </AwesomeButton>
+                                    {/* <Button variant='contained' href={link.link}> {link.text} </Button> */}
                                 </ListItem>
                                 // <Chip sx={{ width: "300px" }}
                                 //     label={link.text}
