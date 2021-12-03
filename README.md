@@ -22,6 +22,10 @@ pnpm run dev
 ### Prebuild
 
 ### Build From Scratch
+```bash
+docker build -t website:latest ./
+docker run --rm -it --name website -p 80:80 website
+```
 
 # Link
 ### particles.js  lhttps://particles.js.org/
