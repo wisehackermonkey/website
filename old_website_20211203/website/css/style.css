@@ -1,0 +1,21 @@
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+/*     background: no-repeat url("../img/bg_large_v1.png") */
+    background: rgb(255,239,0);
+background: linear-gradient(180deg, rgba(255,239,0,1) 0%, rgba(255,172,46,1) 82%, rgba(255,133,212,1) 100%);
+}
+
+#author{
+    padding-top: 100px;
+}

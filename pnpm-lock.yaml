@@ -8,9 +8,13 @@ specifiers:
   '@mui/material': ^5.2.2
   '@vitejs/plugin-react': ^1.0.0
   history: '5'
-  react: ^17.0.0
+  react: ^17.0.2
+  react-awesome-button: ^6.5.1
   react-dom: ^17.0.0
+  react-parallax-tilt: ^1.5.81
   react-router-dom: '6'
+  react-tsparticles: ^1.37.5
+  typeface-turret-road: ^1.1.13
   vite: ^2.6.4
 
 dependencies:
@@ -21,8 +25,12 @@ dependencies:
   '@mui/material': 5.2.2_465628833d889a3333e986b124e296da
   history: 5.1.0
   react: 17.0.2
+  react-awesome-button: 6.5.1
   react-dom: 17.0.2_react@17.0.2
+  react-parallax-tilt: 1.5.81_react-dom@17.0.2+react@17.0.2
   react-router-dom: 6.0.2_react-dom@17.0.2+react@17.0.2
+  react-tsparticles: 1.37.5_react@17.0.2
+  typeface-turret-road: 1.1.13
 
 devDependencies:
   '@vitejs/plugin-react': 1.1.0
@@ -1048,6 +1056,10 @@ packages:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: true
 
+  /fast-deep-equal/3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: false
+
   /find-root/1.1.0:
     resolution: {integrity: sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==}
     dev: false
@@ -1292,6 +1304,12 @@ packages:
       react-is: 16.13.1
     dev: false
 
+  /react-awesome-button/6.5.1:
+    resolution: {integrity: sha512-94AS4BSIgRCMSHq8wcy3ztostjLK8cqjUX6DT5oWiYNs3uxLv5uk4yFMlzXBjo0I4TERLOZGn66q0xwb+xw5qw==}
+    dependencies:
+      web-animation-club: 0.6.0
+    dev: false
+
   /react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
@@ -1309,6 +1327,16 @@ packages:
 
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+    dev: false
+
+  /react-parallax-tilt/1.5.81_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-Xk7MnoNmREJ8wDwOwfVIgf0M5XyMq5keu07tAgpwFczHgI3Qx1qCTlaPLi4fbNKmhTl9JY2kawzJHnPNGe1Uxw==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react-refresh/0.11.0:
@@ -1349,6 +1377,16 @@ packages:
       prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-tsparticles/1.37.5_react@17.0.2:
+    resolution: {integrity: sha512-Vl+rg3C+vsrek675x7OHBbLLZLJ0dZZjV3OhjT9NiKhdK+NcxNDB2CL3INsSZIv99sln5DRgsxdL3GYrZtqsqg==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      fast-deep-equal: 3.1.3
+      react: 17.0.2
+      tsparticles: 1.37.5
     dev: false
 
   /react/17.0.2:
@@ -1424,6 +1462,15 @@ packages:
     resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
     engines: {node: '>=4'}
 
+  /tsparticles/1.37.5:
+    resolution: {integrity: sha512-BQBRnnKKhKH2POwxuHzPiuL/zPUjuR5QmMCFQ2vm3fadE2k4vqmH099m1R9R+nt0lTvWL6SCS0hYQQkqUjsMXg==}
+    requiresBuild: true
+    dev: false
+
+  /typeface-turret-road/1.1.13:
+    resolution: {integrity: sha512-IcJjdrrCoBJZwFvo+9yNK7T/GotJsM5h6EBbG/WAbrzLfprYSSAI2mDf1CW00MdvUZ9MugDzA6w1kn81Qx/iUg==}
+    dev: false
+
   /vite/2.6.14:
     resolution: {integrity: sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==}
     engines: {node: '>=12.2.0'}
@@ -1447,6 +1494,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /web-animation-club/0.6.0:
+    resolution: {integrity: sha512-9W+EQu1HiaPLe/7WZlhJ2ULqQ4VL80RPDYW+ZcjfTKp6ayOuT1k3SVO6+tu0VBRmOqueJ/mrG+rjjInIv8Aglg==}
+    dev: false
 
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}

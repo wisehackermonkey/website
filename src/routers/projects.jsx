@@ -1,7 +1,4 @@
 import * as React from 'react';
-import BubbleUI from "react-bubble-ui";
-import "react-bubble-ui/dist/index.css";
-// import Child from "./ChildComponent";
 import "./projects.css";
 import {Box, Button, Chip, Stack, CssBaseline } from '@mui/material';
 
