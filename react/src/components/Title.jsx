@@ -12,7 +12,7 @@ export default function Title() {
                 <Paper elevation={10}>
                     <Typography
                         variant="h3"
-                        // gutterBottom
+                        gutterBottom
                         style={{ fontFamily: "Turret Road", color: "black" }}
                     >
                         Orans🦾website

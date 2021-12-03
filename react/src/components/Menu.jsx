@@ -19,7 +19,7 @@ import { Button, Chip, Stack, CssBaseline } from '@mui/material';
 
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
-
+import "typeface-turret-road";
 import "../App.css"
 import "./Menu.css"
 import LINKS from "../../../links.json"
@@ -36,7 +36,13 @@ export default function IconMenu() {
                         LINKS.links.map((link, key) => {
                             return (
                                 <ListItem key={key}>
-                                    <AwesomeButton type="primary">{link.text} </AwesomeButton>
+                                    <AwesomeButton type="primary">
+                                        <Typography
+                                        style={{ fontFamily: "Turret Road", color: "white" }}
+                                        >
+                                            {link.text}
+                                        </Typography>
+                                        </AwesomeButton>
                                     {/* <Button variant='contained' href={link.link}> {link.text} </Button> */}
                                 </ListItem>
                                 // <Chip sx={{ width: "300px" }}
@@ -50,7 +56,7 @@ export default function IconMenu() {
                             )
                         })
                     }
-               
+
                 </Stack>
 
                 {/* </List> */}
