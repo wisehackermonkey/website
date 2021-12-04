@@ -7,7 +7,7 @@ const fs = require('fs'),
 const app = express();
 const PORT = 443
 var options = {
-    key: fs.readFileSync('.cert/orancollins.com/privkey.pem'),
+    key: fs.readFileSync(path.join(__dirname,'.cert',"orancollins.com","privkey.pem")),
     cert: fs.readFileSync('.cert/orancollins.com/cert.pem'),
 };
 

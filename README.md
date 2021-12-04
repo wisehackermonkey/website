@@ -55,7 +55,9 @@ docker-compose down
 
 docker-compose  -f docker-compose.ssl.yml up -d 
 
-docker run --rm -it -p 443:443 -v "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com" wisehackermonkey/website:react-ssl /bin/sh
+docker run --rm -it -p 443:443 -v "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com" wisehackermonkey/website:react-ssl 
+
+/bin/sh
 
 version: '3.3'
 services:
