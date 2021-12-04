@@ -5,5 +5,5 @@ services:
         container_name: website
         ports:
             - '80:80'
-            - '443:80'
+            - '443:443'
         image: 'wisehackermonkey/website:react'
