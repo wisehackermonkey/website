@@ -24,8 +24,7 @@ export DOCKER_CLI_EXPERIMENTAL=enabled
 DOCKER_BUILDKIT=1 & docker buildx create --use --name multiarchbuilder
 docker buildx ls
 # DOCKER_BUILDKIT=1 & docker build -t wisehackermonkey/website:latest .
-DOCKER_BUILDKIT=1 & docker buildx build -t wisehackermonkey/website:latest --platform=linux/arm,linux/arm64,linux/amd64 . --push
-
+docker buildx build -t wisehackermonkey/website:latest --platform=linux/arm,linux/arm64,linux/amd64 . --push
 ```
 
 #### docker compose (DEV)
