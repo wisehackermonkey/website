@@ -46,8 +46,11 @@ docker push  wisehackermonkey/website:react
 cd ~
 cd /path/to/website
 mkdir ./.cert
-cp -r /etc/letsencrypt/live/orancollins.com/ /etc/letsencrypt/live/orancollins.com.old
-ln -s /etc/letsencrypt/live/orancollins.com/ ./.cert/
+# cp -r /etc/letsencrypt/live/orancollins.com/ /etc/letsencrypt/live/orancollins.com.old
+mkdir -p ./.cert/orancollins.com
+cp -r /etc/letsencrypt/live/orancollins.com/* ./.cert/orancollins.com
+chmod 777 -R ./.cert/orancollins.com
+chown $USER:$USER -R ./.cert/orancollins.com
 
 docker build -f Dockerfile.ssl -t wisehackermonkey/website:react-ssl . 
 docker push  wisehackermonkey/website:react-ssl
@@ -55,9 +58,7 @@ docker-compose down
 
 docker-compose  -f docker-compose.ssl.yml up -d 
 
-docker run --rm -it -p 443:443 -v "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com" wisehackermonkey/website:react-ssl 
-
-/bin/sh
+docker run --rm -it -p 443:443 -v "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com" wisehackermonkey/website:react-ssl /bin/sh
 
 version: '3.3'
 services:
