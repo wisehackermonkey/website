@@ -39,7 +39,17 @@ docker build -t wisehackermonkey/website:react ./
 docker push  wisehackermonkey/website:react
 
 ```
-### how to run within docker container
+
+# How to run ssl version
+### 
+```bash
+cd ~
+cd /path/to/website
+mkdir ./.cert
+cp -r /etc/letsencrypt/live/orancollins.com/ /etc/letsencrypt/live/orancollins.com.old
+ln -s /etc/letsencrypt/live/orancollins.com/ ./.cert/
+
+```
 
 # Link
 ### particles.js  lhttps://particles.js.org/
