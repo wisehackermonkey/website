@@ -55,6 +55,21 @@ docker-compose down
 
 docker-compose  -f docker-compose.ssl.yml up -d 
 
+docker run --rm -it -p 443:443 -v "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com" wisehackermonkey/website:react-ssl /bin/sh
+
+version: '3.3'
+services:
+    website:
+        restart: always
+        container_name: website
+        ports:
+            - '80:80'
+            - '443:443'
+        image: 'wisehackermonkey/website:react-ssl'
+        volumes:
+            - './.cert/orancollins.com:/app/.cert/orancollins.com'
+
+
 ```
 
 # Link
