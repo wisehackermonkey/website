@@ -1,9 +1,11 @@
-FROM node:12.18.1
+FROM node:16.9.1
 ENV NODE_ENV=production
 WORKDIR /usr/share/nginx/html
 COPY ["package.json", "./"]
+COPY . .
+RUN npm install -D
 RUN npm install --production
-RUN npm run build
+RUN npm install -g vite && npm run build
 
 FROM nginx:alpine
 COPY --from=0 /usr/share/nginx/html/ /usr/share/nginx/html
