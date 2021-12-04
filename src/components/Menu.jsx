@@ -8,7 +8,7 @@ import "react-awesome-button/dist/styles.css";
 import "typeface-turret-road";
 import "../App.css"
 import "./Menu.css"
-import LINKS from "../../../links.json"
+import LINKS from "../../links.json"
 
 export default function IconMenu() {
     return (
