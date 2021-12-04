@@ -14,6 +14,7 @@ npm run dev
 ```
 ### using pnpm
 ```bash
+curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
 pnpm install
 pnpm run dev
 ```
