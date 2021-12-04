@@ -12,7 +12,7 @@ var options = {
 };
 
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '/')));
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -21,5 +21,5 @@ app.get('/', function (req, res) {
 
 
 const server = https.createServer(options, app).listen(PORT, function () {
-    console.log("Orans.dev server listening on PORT: " + PORT);
+    console.log("Orans Server server listening on PORT: " + PORT);
 });
