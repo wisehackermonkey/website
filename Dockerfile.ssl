@@ -6,7 +6,7 @@ RUN npm install --production
 COPY . .
 RUN npm run build
 
-node:16.13.1-alpine3.14
+FROM node:16.3.0-alpine
 COPY --from=0 /app/dist /app
 WORKDIR /app
 RUN npm install express
