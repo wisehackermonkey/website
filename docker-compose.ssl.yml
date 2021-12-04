@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    website:
+        restart: always
+        container_name: website
+        ports:
+            - '80:80'
+            - '443:443'
+        image: 'wisehackermonkey/website:react-ssl'
+        volumes:
+            - './.cert/orancollins.com:/usr/share/nginx/html/.cert/orancollins.com'
