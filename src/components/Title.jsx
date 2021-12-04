@@ -15,7 +15,7 @@ export default function Title() {
                         gutterBottom
                         style={{ fontFamily: "Turret Road", color: "black" }}
                     >
-                        {"<Oran's website>"}
+                        {"<{Oran's website}>"}
                     </Typography>
                 </Paper>
             </div>
