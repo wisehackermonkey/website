@@ -30,9 +30,10 @@ function App() {
       loaded={particlesLoaded}
       options={PARTICLES}
     />
-
+      <Stack>
         <Title />
         <Menu />
+        </Stack>
       </header>
     </div>
   )

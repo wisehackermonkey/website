@@ -2,21 +2,24 @@
     "links": [
         {
             "text": "My Personal Blog",
-            "link": "http://oransblog.com"
+            "link": "https://oransblog.com"
+        },
+        {
+            "text": "Puzzle Checker",
+            "link": "http://www.orancollins.com:3333/"
+        },
+        {
+            "text": "Projects",
+            "link": "https://wisehackermonkey.github.io/notes/#/page/projects"
         },
         {
             "text": "Resume",
             "link": "https://github.com/wisehackermonkey/resume-master/raw/master/oran_resume_v1.pdf"
         },
         {
-            "text": "Business card Puzzle checker",
-            "link": "http://www.orancollins.com:3333/"
-        } ,
-        {
-            "text": "Projects",
-            "link": "https://orans.dev/projects"
-        } 
-           
+            "text": "🦾",
+            "link": "#"
+        }
     ],
     "old-links": [
         {

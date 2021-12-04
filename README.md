@@ -10,23 +10,36 @@
 ### using npm
 ```bash
 npm install
-npm run dev
+npm run dev-host
 ```
 ### using pnpm
 ```bash
 curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
 pnpm install
-pnpm run dev
+pnpm run dev-host
 ```
 
 # How to run using a docker container
-### Prebuild
-
+### Prebuild (Recomended)
+```bash
+docker-compose  down
+docker-compose  up -d
+```
 ### Build From Scratch
 ```bash
 docker build -t website:latest ./
 docker run --rm -it --name website -p 80:80 website
 ```
+
+# (Maintainer notes)
+### Note: heres how to push new version to docker hub
+```bash
+docker login
+docker build -t wisehackermonkey/website:react ./
+docker push  wisehackermonkey/website:react
+
+```
+### how to run within docker container
 
 # Link
 ### particles.js  lhttps://particles.js.org/

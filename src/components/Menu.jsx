@@ -17,21 +17,21 @@ export default function IconMenu() {
             <Box sx={{ width: '100%', maxWidth: 360 }}>
                 {/* <Grid item xs={12} md={6}> */}
                 {/* <List  > */}
-                <Stack spacing={1}>
+                <Stack spacing={1} alignItems="center">
 
                     {
                         LINKS.links.map((link, key) => {
                             return (
-                                <ListItem key={key}>
-                                    <AwesomeButton type="primary">
+                                // <ListItem key={key}>
+                                    <AwesomeButton type="primary" href={link.link}>
                                         <Typography
                                             style={{ fontFamily: "Turret Road", color: "white" }}
                                         >
                                             {link.text}
                                         </Typography>
                                     </AwesomeButton>
-                                    {/* <Button variant='contained' href={link.link}> {link.text} </Button> */}
-                                </ListItem>
+                                    // {/* <Button variant='contained' href={link.link}> {link.text} </Button> */}
+                                // </ListItem>
                                 // <Chip sx={{ width: "300px" }}
                                 //     label={link.text}
                                 //     component="a"

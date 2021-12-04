@@ -3,7 +3,6 @@ ENV NODE_ENV=production
 WORKDIR /usr/share/nginx/html
 COPY ["package.json", "./"]
 COPY . .
-RUN npm install -D
 RUN npm install --production
 RUN npm run build
 
