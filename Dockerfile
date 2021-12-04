@@ -2,8 +2,8 @@ FROM node:16.9.1
 ENV NODE_ENV=production
 WORKDIR /usr/share/nginx/html
 COPY ["package.json", "./"]
-COPY . .
 RUN npm install --production
+COPY . .
 RUN npm run build
 
 FROM nginx:alpine
