@@ -8,4 +8,4 @@ services:
             - '443:443'
         image: 'wisehackermonkey/website:react-ssl'
         volumes:
-            - './.cert/orancollins.com:/app/.cert/orancollins.com'
+            - "${PWD}/.cert/orancollins.com:/app/.cert/orancollins.com"
