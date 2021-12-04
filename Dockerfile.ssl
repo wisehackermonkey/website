@@ -8,10 +8,11 @@ RUN npm run build
 
 FROM node:16.3.0-alpine
 COPY --from=0 /app/dist /app
+COPY --from=0 /app/server.js /app
 WORKDIR /app
 RUN npm install express
 
 RUN echo "Oran's Express Server has Started."
 EXPOSE 80
 EXPOSE 443
-CMD ["node","server.js"]
+CMD ["node","./server.js"]
