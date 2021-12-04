@@ -1,0 +1,17 @@
+FROM node:16.9.1
+ENV NODE_ENV=production
+WORKDIR /app
+COPY ["package.json", "./"]
+RUN npm install --production
+COPY . .
+RUN npm run build
+
+node:16.3.0-alpine
+COPY --from=0 /app/dist /app
+WORKDIR /app
+RUN npm install express
+
+RUN echo "Oran's Express Server has Started."
+EXPOSE 80
+EXPOSE 443
+CMD ["node","server.js"]
