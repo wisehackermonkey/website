@@ -49,7 +49,7 @@ mkdir ./.cert
 cp -r /etc/letsencrypt/live/orancollins.com/ /etc/letsencrypt/live/orancollins.com.old
 ln -s /etc/letsencrypt/live/orancollins.com/ ./.cert/
 
-docker build -t wisehackermonkey/website:react-ssl ./Dockerfile.ssl
+docker build -f Dockerfile.ssl -t wisehackermonkey/website:react-ssl . 
 docker push  wisehackermonkey/website:react-ssl
 docker-compose down
 
