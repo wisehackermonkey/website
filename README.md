@@ -83,3 +83,28 @@ docker buildx ls
 docker buildx inspect --bootstrap
 docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6 -t wisehackermonkey/website --push .
 ```
+
+
+# redbean server one file for everything
+![Alt text](image.png)
+[redbean](https://redbean.dev/index.html)
+### what is this ?
+#### its a super small 2mb web server that runs on windows, mac, and linux without any dependancies! super cool . created by [Justine Tunney Link](https://justine.lol/)
+### build new version
+```bash
+wget https://redbean.dev/zip.com
+curl https://redbean.dev/redbean-latest.com >redbean.com
+chmod +x redbean.com
+```
+# save a copy
+```
+cp redbean.com redbean.com.unmodifed
+./zip.com redbean.com index.html
+./redbean.com -p 80 -d -L ./log/
+
+```
+-r = rewright
+-p = port (80 for web trafic in thiscase)
+-d =daemonize allows you to get back controll of your terminal
+# open browser to `localhost:80/`
+CTRL + C 2x times to close or CTRL + D
